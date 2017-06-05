@@ -30,4 +30,5 @@ RUN rm text-summarization-project.rar?dl=0
 # WORKDIR ${text-summarization-project}
 # EXPOSE 8000
 # CMD ["python", "manage.py", "runserver"]
+RUN cd text-summarization-project
 RUN ls
