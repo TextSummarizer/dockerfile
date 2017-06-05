@@ -1,5 +1,4 @@
 FROM ubuntu:latest
-EXPOSE 8000
 
 # OS stuffs
 RUN apt-get update -y
