@@ -25,9 +25,8 @@ RUN wget https://www.dropbox.com/s/ubrzqzrrfs0ues1/text-summarization-project.ra
 RUN unrar x text-summarization-project.rar?dl=0
 RUN rm text-summarization-project.rar?dl=0
 
-
+RUN cd text-summarization-project
 EXPOSE 8000
-WORKDIR ${text-summarization-project}
 CMD ["python", "manage.py", "runserver"]
 # RUN cd text-summarization-project
 # RUN ls
